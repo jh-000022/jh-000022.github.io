@@ -1,9 +1,20 @@
 <html>
  <body>
   <script>
-   console.log("SO....")
-   document.location.href = "https://monroecti.schoology.com/home"
-   console.log("HELLO!")
+  
+   const delay = ms => new Promise(res => setTimeout(res, ms));
+   
+   const yourFunction = async () => {
+    console.log("SO....");
+    document.location.href = "https://monroecti.schoology.com/home";
+    console.log("HELLO!");
+    
+    await delay(3000);
+    
+    console.log("are you still there?");
+   };
+   
+   
   </script>
  </body>
 </html
